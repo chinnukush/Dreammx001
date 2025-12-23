@@ -106,14 +106,14 @@ TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/dreamxbotz")   # Second tut
 TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/dreamxbotz")   # Third tutorial link for verification
 
 # Verification (Must Fill All Veriables. Else You Got Error
-SHORTENER_API = environ.get("SHORTENER_API", "a7ac9b3012c67d7491414cf272d82593c75f6cbb") # Shortener API key
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "omegalinks.in") # Shortener website
+SHORTENER_API = environ.get("SHORTENER_API", "45b6928d65d1c1dfc2d52d052d879b9b02dd7fe3") # Shortener API key
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "arolinks.com") # Shortener website
 
-SHORTENER_API2 = environ.get("SHORTENER_API2", "a7ac9b3012c67d7491414cf272d82593c75f6cbb")  # Shortener API key for second website
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "omegalinks.in") # Shortener website for second website
+SHORTENER_API2 = environ.get("SHORTENER_API2", "45b6928d65d1c1dfc2d52d052d879b9b02dd7fe3")  # Shortener API key for second website
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "arolinks.com") # Shortener website for second website
 
-SHORTENER_API3 = environ.get("SHORTENER_API3", "a7ac9b3012c67d7491414cf272d82593c75f6cbb")  
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "omegalinks.in") # Shortener website for third website
+SHORTENER_API3 = environ.get("SHORTENER_API3", "45b6928d65d1c1dfc2d52d052d879b9b02dd7fe3")  
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "arolinks.com") # Shortener website for third website
 
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "1200")) # Time gap for two-step verification in seconds (default: 20 minutes)
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))    
@@ -121,16 +121,16 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))
 # ============================
 # Channel & Group Links Configuration
 # ============================
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/dreamxbotz') # Group link for the bot
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/dreamxbotz') # Owner link for the bot
-UPDATE_CHNL_LNK = environ.get('UPDATE_CHNL_LNK', 'https://t.me/dreamxbotz') # Update channel link for the bot
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+nOdVKAzF-mQyYTU1') # Group link for the bot
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/hari_moviez') # Owner link for the bot
+UPDATE_CHNL_LNK = environ.get('UPDATE_CHNL_LNK', 'https://t.me/+jgLqztoklls5MjRl') # Update channel link for the bot
 
 # ============================
 # User Configuration
 # ============================
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
+PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '7253187871').split()]
 
 # ============================
 # Miscellaneous Configuration
