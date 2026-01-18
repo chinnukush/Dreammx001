@@ -29,7 +29,7 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 300))    # Cache time in seconds (def
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))  # Use caption filter for search results (default: True)
 INDEX_CAPTION = bool(environ.get('SAVE_CAPTION', False)) # Save caption db when idexing make it False if you dont use USE_CAPTION_FILTER for search results (default: True)
 #Making it false will not save caption in db SO you can save some storage space
-COVERX = bool(environ.get('COVERX', True)) # Use cover image for indexed files (default: True)
+COVERX = bool(environ.get('COVERX', False)) # Use cover image for indexed files (default: True)
 # If you disable it then bot will use a default thumb for all files
 
 PICS = (environ.get('PICS', 'https://i.ibb.co/GfqTZfK8/image.jpg')).split()  # Sample pic
@@ -85,11 +85,11 @@ DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://anikush8310_db_user:
 # ============================
 MOVIE_UPDATE_NOTIFICATION = bool(environ.get('MOVIE_UPDATE_NOTIFICATION', False))  # Notification On (True) / Off (False)
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1003188546278'))  # Notification of sent to your channel
-DREAMXBOTZ_IMAGE_FETCH = bool(environ.get('DREAMXBOTZ_IMAGE_FETCH', True))  # On (True) / Off (False)
+DREAMXBOTZ_IMAGE_FETCH = bool(environ.get('DREAMXBOTZ_IMAGE_FETCH', False))  # On (True) / Off (False)
 LINK_PREVIEW = bool(environ.get('LINK_PREVIEW', False)) # Shows link preview in notification msg instead of image
 ABOVE_PREVIEW = bool(environ.get('ABOVE_PREVIEW', True)) # Shows link preview above the text in notification msg if True else below the msg
 TMDB_API_KEY = environ.get('TMDB_API_KEY', '6abcb6bb99fb77f33c37016a28866ed2') # preffer to use your own tmdb API Key get it from https://www.themoviedb.org/settings/api
-TMDB_POSTER = bool(environ.get('TMDB_POSTER', True)) # Shows TMDB poster in notification msg
+TMDB_POSTER = bool(environ.get('TMDB_POSTER', False)) # Shows TMDB poster in notification msg
 LANDSCAPE_POSTER = bool(environ.get('LANDSCAPE_POSTER', True)) # Shows landscape poster in notification msg
 
 # ============================
@@ -148,7 +148,7 @@ INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))  # Index 
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))  # True if you want no results messages in Log Channel
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)    # Max Button On (True) / Off (False)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)    # P_TTI_SHOW_OFF On (True) / Off (False)
-IMDB = is_enabled((environ.get('IMDB', "True")), False)    # IMDB Results On (True) / Off (False)
+IMDB = is_enabled((environ.get('IMDB', "False")), False)    # IMDB Results On (True) / Off (False)
 TMDB_ON_SEARCH = is_enabled((environ.get('TMDB_ON_SEARCH', "True")), False)    # Use TMDB Poster On Search Results
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True) # Auto Filter On (True) / Off (False)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True) # Auto Delete On (True) / Off (False)
